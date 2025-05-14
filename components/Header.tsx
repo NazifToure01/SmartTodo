@@ -7,10 +7,13 @@ import { CheckCircle, LayoutDashboard, List, Plus } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { CreateTaskDialog } from '@/components/CreateTaskDialog';
 import { useState } from 'react';
+import { useLanguage } from '@/hooks/useLanguage';
+import { LanguageSwitcher } from '@/components/LanguageSwitcher';
 
 export function Header() {
   const pathname = usePathname();
   const [isCreateTaskOpen, setIsCreateTaskOpen] = useState(false);
+  const { t } = useLanguage();
   
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -18,7 +21,7 @@ export function Header() {
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center gap-2">
             <CheckCircle className="h-6 w-6 text-primary" />
-            <span className="font-bold text-xl hidden sm:inline-block">BentoTodo</span>
+            <span className="font-bold text-xl hidden sm:inline-block">{t('app.name')}</span>
           </Link>
           
           <nav className="ml-6 hidden md:flex items-center space-x-4">
@@ -28,8 +31,8 @@ export function Header() {
                 pathname === '/' ? 'text-primary' : 'text-muted-foreground'
               }`}
             >
-              <LayoutDashboard className="mr-1 h-4 w-4" />
-              Dashboard
+              <LayoutDashboard className="h-4 w-4 rtl-mr mr-1" />
+              {t('nav.dashboard')}
             </Link>
             <Link 
               href="/tasks" 
@@ -37,8 +40,8 @@ export function Header() {
                 pathname === '/tasks' ? 'text-primary' : 'text-muted-foreground'
               }`}
             >
-              <List className="mr-1 h-4 w-4" />
-              Tasks
+              <List className="h-4 w-4 rtl-mr mr-1" />
+              {t('nav.tasks')}
             </Link>
           </nav>
         </div>
@@ -50,8 +53,8 @@ export function Header() {
             className="hidden sm:flex" 
             onClick={() => setIsCreateTaskOpen(true)}
           >
-            <Plus className="mr-1 h-4 w-4" />
-            New Task
+            <Plus className="h-4 w-4 rtl-mr mr-1" />
+            {t('tasks.newTask')}
           </Button>
           <Button 
             variant="outline" 
@@ -61,6 +64,7 @@ export function Header() {
           >
             <Plus className="h-4 w-4" />
           </Button>
+          <LanguageSwitcher />
           <ThemeToggle />
         </div>
       </div>

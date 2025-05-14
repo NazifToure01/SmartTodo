@@ -1,0 +1,97 @@
+{
+  "app": {
+    "name": "BentoTodo",
+    "tagline": "Modern Task Management"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "tasks": "Tasks",
+    "calendar": "Calendar"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "description": "Manage your tasks and categories from one place"
+  },
+  "tasks": {
+    "title": "Tasks",
+    "description": "View and manage all your tasks",
+    "newTask": "New Task",
+    "noTasks": "No tasks found",
+    "addTask": "Add Task",
+    "search": "Search tasks...",
+    "filters": "Filters",
+    "clearFilters": "Clear All",
+    "activeFilters": "Active filters",
+    "views": {
+      "list": "List View",
+      "kanban": "Kanban View"
+    },
+    "status": {
+      "pending": "Pending",
+      "inProgress": "In Progress",
+      "completed": "Completed"
+    },
+    "priority": {
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low"
+    },
+    "category": "Category"
+  },
+  "calendar": {
+    "title": "Calendar"
+  },
+  "todayTasks": {
+    "title": "Today's Tasks",
+    "noTasks": "No tasks due today",
+    "addTaskForToday": "Add Task for Today"
+  },
+  "categories": {
+    "title": "Categories",
+    "manage": "Manage Categories"
+  },
+  "overview": {
+    "title": "Overview",
+    "totalTasks": "Total Tasks",
+    "completedTasks": "Completed",
+    "pendingTasks": "Pending"
+  },
+  "recentTasks": {
+    "title": "Recent Tasks",
+    "noTasks": "No recent tasks"
+  },
+  "quickActions": {
+    "title": "Quick Actions",
+    "addTask": "Add Task",
+    "addCategory": "Add Category"
+  },
+  "common": {
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "save": "Save",
+    "loading": "Loading...",
+    "search": "Search",
+    "filter": "Filter",
+    "clear": "Clear"
+  },
+  "taskForm": {
+    "title": "Title",
+    "description": "Description",
+    "dueDate": "Due Date",
+    "category": "Category",
+    "priority": "Priority",
+    "status": "Status",
+    "createTask": "Create Task",
+    "updateTask": "Update Task",
+    "selectCategory": "Select a category",
+    "noCategory": "No category"
+  },
+  "language": {
+    "title": "Language",
+    "en": "English",
+    "fr": "French",
+    "ar": "Arabic"
+  }
+}

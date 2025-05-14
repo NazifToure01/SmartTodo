@@ -119,18 +119,20 @@ export function CreateCategoryDialog({ open, onOpenChange }: CreateCategoryDialo
                   <FormControl>
                     <div className="grid grid-cols-6 gap-2 max-h-[200px] overflow-y-auto">
                       {CATEGORY_ICONS.map((iconName) => {
-                        const IconComponent = (LucideIcons as Record<string, LucideIcon>)[iconName];
+                        const IconComponent = LucideIcons[iconName as keyof typeof LucideIcons];
                         return (
-                          <div
+                          <button
                             key={iconName}
+                            type="button"
                             className={cn(
-                              "h-10 rounded-md border border-border cursor-pointer flex items-center justify-center",
-                              field.value === iconName && "bg-primary/10 border-primary"
+                              "h-10 rounded-md border border-border flex items-center justify-center",
+                              field.value === iconName ? "bg-primary/10 border-primary" : "hover:bg-primary/5"
                             )}
                             onClick={() => form.setValue('icon', iconName)}
                           >
-                            {IconComponent && <IconComponent className="h-5 w-5" />}
-                          </div>
+                            {/* {IconComponent && <IconComponent className="h-5 w-5" />} */}
+                            <LucideIcon className="h-5 w-5" />
+                          </button>
                         );
                       })}
                     </div>

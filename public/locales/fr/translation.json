@@ -1,0 +1,97 @@
+{
+  "app": {
+    "name": "BentoTodo",
+    "tagline": "Gestion de tâches moderne"
+  },
+  "nav": {
+    "dashboard": "Tableau de bord",
+    "tasks": "Tâches",
+    "calendar": "Calendrier"
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "description": "Gérez vos tâches et catégories depuis un seul endroit"
+  },
+  "tasks": {
+    "title": "Tâches",
+    "description": "Visualisez et gérez toutes vos tâches",
+    "newTask": "Nouvelle tâche",
+    "noTasks": "Aucune tâche trouvée",
+    "addTask": "Ajouter une tâche",
+    "search": "Rechercher des tâches...",
+    "filters": "Filtres",
+    "clearFilters": "Tout effacer",
+    "activeFilters": "Filtres actifs",
+    "views": {
+      "list": "Vue liste",
+      "kanban": "Vue Kanban"
+    },
+    "status": {
+      "pending": "En attente",
+      "inProgress": "En cours",
+      "completed": "Terminé"
+    },
+    "priority": {
+      "high": "Haute",
+      "medium": "Moyenne",
+      "low": "Basse"
+    },
+    "category": "Catégorie"
+  },
+  "calendar": {
+    "title": "Calendrier"
+  },
+  "todayTasks": {
+    "title": "Tâches du jour",
+    "noTasks": "Aucune tâche pour aujourd'hui",
+    "addTaskForToday": "Ajouter une tâche pour aujourd'hui"
+  },
+  "categories": {
+    "title": "Catégories",
+    "manage": "Gérer les catégories"
+  },
+  "overview": {
+    "title": "Aperçu",
+    "totalTasks": "Total des tâches",
+    "completedTasks": "Terminées",
+    "pendingTasks": "En attente"
+  },
+  "recentTasks": {
+    "title": "Tâches récentes",
+    "noTasks": "Aucune tâche récente"
+  },
+  "quickActions": {
+    "title": "Actions rapides",
+    "addTask": "Ajouter une tâche",
+    "addCategory": "Ajouter une catégorie"
+  },
+  "common": {
+    "add": "Ajouter",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "loading": "Chargement...",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "clear": "Effacer"
+  },
+  "taskForm": {
+    "title": "Titre",
+    "description": "Description",
+    "dueDate": "Date d'échéance",
+    "category": "Catégorie",
+    "priority": "Priorité",
+    "status": "Statut",
+    "createTask": "Créer une tâche",
+    "updateTask": "Mettre à jour la tâche",
+    "selectCategory": "Sélectionner une catégorie",
+    "noCategory": "Aucune catégorie"
+  },
+  "language": {
+    "title": "Langue",
+    "en": "Anglais",
+    "fr": "Français",
+    "ar": "Arabe"
+  }
+}

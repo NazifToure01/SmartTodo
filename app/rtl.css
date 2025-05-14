@@ -1,0 +1,54 @@
+/* RTL-specific styles */
+
+/* Flip icons and directional elements in RTL mode */
+html[dir="rtl"] .rtl-flip {
+  transform: scaleX(-1);
+}
+
+/* Adjust text alignment for RTL */
+html[dir="rtl"] .rtl-text-right {
+  text-align: left;
+}
+
+html[dir="rtl"] .rtl-text-left {
+  text-align: right;
+}
+
+/* Adjust margins and paddings for RTL */
+html[dir="rtl"] .rtl-mr {
+  margin-right: 0;
+  margin-left: 0.25rem;
+}
+
+html[dir="rtl"] .rtl-ml {
+  margin-left: 0;
+  margin-right: 0.25rem;
+}
+
+html[dir="rtl"] .rtl-pr {
+  padding-right: 0;
+  padding-left: 0.25rem;
+}
+
+html[dir="rtl"] .rtl-pl {
+  padding-left: 0;
+  padding-right: 0.25rem;
+}
+
+/* Adjust flexbox direction for RTL */
+html[dir="rtl"] .rtl-flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+/* Adjust border radius for RTL */
+html[dir="rtl"] .rtl-rounded-r {
+  border-radius: 0;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+html[dir="rtl"] .rtl-rounded-l {
+  border-radius: 0;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}

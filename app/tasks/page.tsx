@@ -29,12 +29,16 @@ import {
 import { Task } from '@/types';
 import { CategoryBadge } from '@/components/CategoryBadge';
 import { motion } from 'framer-motion';
+import { PageContainer } from '@/components/PageContainer';
+import { useLanguage } from '@/hooks/useLanguage';
+import { PageHeader } from '@/components/PageHeader';
 
 export default function TasksPage() {
   const { tasks } = useTasks();
   const { categories } = useCategories();
   const searchParams = useSearchParams();
   const router = useRouter();
+  const { t } = useLanguage();
   
   const categoryParam = searchParams.get('category');
   const queryParam = searchParams.get('q') || '';
@@ -130,13 +134,11 @@ export default function TasksPage() {
     categoryFilter.length > 0;
   
   return (
-    <div className="container pb-8">
-      <div className="my-6">
-        <h1 className="font-bold text-3xl mb-1">Tasks</h1>
-        <p className="text-muted-foreground">
-          Manage and organize all your tasks
-        </p>
-      </div>
+    <PageContainer>
+      <PageHeader
+        title={t('tasks.title')}
+        description={t('tasks.description')}
+      />
       
       <div className="flex flex-col md:flex-row justify-between gap-4 mb-6">
         <div className="flex flex-1 gap-2">
@@ -309,6 +311,6 @@ export default function TasksPage() {
         open={isCreateTaskOpen}
         onOpenChange={setIsCreateTaskOpen}
       />
-    </div>
+    </PageContainer>
   );
 }

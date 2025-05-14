@@ -1,0 +1,97 @@
+{
+  "app": {
+    "name": "بينتو تودو",
+    "tagline": "إدارة المهام الحديثة"
+  },
+  "nav": {
+    "dashboard": "لوحة التحكم",
+    "tasks": "المهام",
+    "calendar": "التقويم"
+  },
+  "dashboard": {
+    "title": "لوحة التحكم",
+    "description": "إدارة مهامك وفئاتك من مكان واحد"
+  },
+  "tasks": {
+    "title": "المهام",
+    "description": "عرض وإدارة جميع مهامك",
+    "newTask": "مهمة جديدة",
+    "noTasks": "لم يتم العثور على مهام",
+    "addTask": "إضافة مهمة",
+    "search": "البحث عن المهام...",
+    "filters": "المرشحات",
+    "clearFilters": "مسح الكل",
+    "activeFilters": "المرشحات النشطة",
+    "views": {
+      "list": "عرض القائمة",
+      "kanban": "عرض كانبان"
+    },
+    "status": {
+      "pending": "قيد الانتظار",
+      "inProgress": "قيد التنفيذ",
+      "completed": "مكتمل"
+    },
+    "priority": {
+      "high": "عالية",
+      "medium": "متوسطة",
+      "low": "منخفضة"
+    },
+    "category": "الفئة"
+  },
+  "calendar": {
+    "title": "التقويم"
+  },
+  "todayTasks": {
+    "title": "مهام اليوم",
+    "noTasks": "لا توجد مهام مستحقة اليوم",
+    "addTaskForToday": "إضافة مهمة لليوم"
+  },
+  "categories": {
+    "title": "الفئات",
+    "manage": "إدارة الفئات"
+  },
+  "overview": {
+    "title": "نظرة عامة",
+    "totalTasks": "إجمالي المهام",
+    "completedTasks": "المكتملة",
+    "pendingTasks": "قيد الانتظار"
+  },
+  "recentTasks": {
+    "title": "المهام الأخيرة",
+    "noTasks": "لا توجد مهام حديثة"
+  },
+  "quickActions": {
+    "title": "إجراءات سريعة",
+    "addTask": "إضافة مهمة",
+    "addCategory": "إضافة فئة"
+  },
+  "common": {
+    "add": "إضافة",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "loading": "جاري التحميل...",
+    "search": "بحث",
+    "filter": "تصفية",
+    "clear": "مسح"
+  },
+  "taskForm": {
+    "title": "العنوان",
+    "description": "الوصف",
+    "dueDate": "تاريخ الاستحقاق",
+    "category": "الفئة",
+    "priority": "الأولوية",
+    "status": "الحالة",
+    "createTask": "إنشاء مهمة",
+    "updateTask": "تحديث المهمة",
+    "selectCategory": "اختر فئة",
+    "noCategory": "بدون فئة"
+  },
+  "language": {
+    "title": "اللغة",
+    "en": "الإنجليزية",
+    "fr": "الفرنسية",
+    "ar": "العربية"
+  }
+}

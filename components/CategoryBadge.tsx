@@ -13,8 +13,7 @@ interface CategoryBadgeProps {
 
 export function CategoryBadge({ category, count, mini = false }: CategoryBadgeProps) {
   // Dynamically get the icon component
-  const IconComponent = category.icon ? 
-    (LucideIcons as Record<string, LucideIcon>)[category.icon] : 
+  const IconComponent = category.icon ? LucideIcon :
     null;
   
   if (mini) {

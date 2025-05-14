@@ -1,10 +1,17 @@
+'use client';
+
 import { Calendar } from "@/components/ui/calendar"
 import { Card } from "@/components/ui/card"
+import { PageContainer } from "@/components/PageContainer"
+import { PageHeader } from "@/components/PageHeader"
+import { useLanguage } from "@/hooks/useLanguage"
 
 export default function CalendarPage() {
+  const { t } = useLanguage();
+  
   return (
-    <div className="container mx-auto py-8">
-      <h1 className="text-3xl font-bold mb-6">Calendar</h1>
+    <PageContainer>
+      <PageHeader title={t('calendar.title')} />
       
       <Card className="p-6">
         <Calendar
@@ -12,6 +19,6 @@ export default function CalendarPage() {
           className="rounded-md border"
         />
       </Card>
-    </div>
+    </PageContainer>
   )
 }

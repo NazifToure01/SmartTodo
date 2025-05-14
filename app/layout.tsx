@@ -1,9 +1,11 @@
 import './globals.css';
+import './rtl.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { AppProvider } from '@/contexts/AppContext';
 import { Header } from '@/components/Header';
 import { cn } from '@/lib/utils';
+import { ClientI18nProvider } from '@/components/ClientI18nProvider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,12 +20,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html suppressHydrationWarning>
       <body className={cn(inter.className, 'min-h-screen bg-background')}>
-        <AppProvider>
-          <Header />
-          <main>{children}</main>
-        </AppProvider>
+        <ClientI18nProvider>
+          <AppProvider>
+            <Header />
+            <main className="mx-auto">{children}</main>
+          </AppProvider>
+        </ClientI18nProvider>
       </body>
     </html>
   );

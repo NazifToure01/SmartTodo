@@ -1,0 +1,15 @@
+name = "smart-todo"
+compatibility_date = "2023-05-15"
+
+# Configure the application type as a static site
+type = "javascript"
+workers_dev = true
+
+# Configure the build output directory
+[site]
+bucket = "./out"
+entry-point = "."
+
+# Configure build command
+[build]
+command = "npm run build"
